@@ -1,7 +1,6 @@
-
 package com.mycompany.figurasgeometricas;
 
-class Triangulo extends FiguraGeometrica {
+public class Triangulo extends FiguraGeometrica {
     private double base;
     private double altura;
 
@@ -26,13 +25,14 @@ class Triangulo extends FiguraGeometrica {
     public void setAltura(double altura) {
         this.altura = altura;
     }
+    
 
-    @Override
     public double obtenerArea() {
         return (base * altura) / 2;
     }
-    @Override
+
     public double obtenerPerimetro() {
-        return 3* base;
+        return 3 * base;
     }
 }
+

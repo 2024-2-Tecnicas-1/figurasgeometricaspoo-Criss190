@@ -1,7 +1,6 @@
-
 package com.mycompany.figurasgeometricas;
 
-class Rectangulo extends FiguraGeometrica {
+public class Rectangulo extends FiguraGeometrica {
     private double lado1;
     private double lado2;
 
@@ -26,13 +25,12 @@ class Rectangulo extends FiguraGeometrica {
     public void setLado2(double lado2) {
         this.lado2 = lado2;
     }
+    
 
-    @Override
     public double obtenerArea() {
         return lado1 * lado2;
     }
 
-    @Override
     public double obtenerPerimetro() {
         return 2 * (lado1 + lado2);
     }
